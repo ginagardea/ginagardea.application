@@ -18,6 +18,12 @@ body {
   color: var(--esri-dark);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===== Navigation ===== */
 .nav {
   position: sticky;
