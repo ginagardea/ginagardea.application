@@ -213,11 +213,6 @@ footer {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* ===== PAGE CONTAINER ===== */
 .container {
@@ -234,22 +229,6 @@ img {
   align-items: center;
 }
 
-.hero img {
-  max-height: 420px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
-
-/* ===== SECTION IMAGES (CHARITY WATER, ETC.) ===== */
-.section-image {
-  max-height: 360px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 16px;
-  margin: 24px 0;
-}
 
 /* ===== PROJECT CARD ===== */
 .project {
@@ -260,12 +239,6 @@ img {
   margin-bottom: 80px;
 }
 
-.project img {
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
-}
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -277,26 +250,6 @@ img {
   transition: all 0.25s ease;
 }
 
-.btn-primary {
-  background: #007AC2; /* Esri Blue */
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(0,122,194,0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px rgba(0,122,194,0.4);
-}
-
-.btn-outline {
-  border: 2px solid #007AC2;
-  color: #007AC2;
-}
-
-.btn-outline:hover {
-  background: #007AC2;
-  color: white;
-}
 
 /* ===== RESPONSIVE FIX ===== */
 @media (max-width: 900px) {
