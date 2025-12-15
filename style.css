@@ -76,15 +76,38 @@ body {
 }
 
 /* ===== Hero ===== */
-.hero {
-  max-width: 1200px;
-  margin: 5rem auto;
-  padding: 0 2rem;
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+/* GLOBAL IMAGE CONTROL */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
+
+ .hero-image {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+<img src="headshot.jpg" alt="Gina Gardea" class="hero-image">
+.project-image {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+<img 
+  src="charity-water.jpg" 
+  alt="charity: water landing page"
+  class="project-image"
+/>
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
 
 .eyebrow {
   color: var(--esri-blue);
