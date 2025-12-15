@@ -1,0 +1,182 @@
+/* ===== Esri-inspired color system ===== */
+:root {
+  --esri-blue: #0079c1;
+  --esri-dark: #0b1f33;
+  --bg: #f6f9fc;
+  --card: #ffffff;
+  --muted: #eef3f8;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--esri-dark);
+}
+
+/* ===== Navigation ===== */
+.nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--esri-dark);
+  font-weight: 500;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn.primary {
+  background: var(--esri-blue);
+  color: white;
+  box-shadow: 0 14px 35px rgba(0,121,193,0.35);
+}
+
+.btn.secondary {
+  background: white;
+  color: var(--esri-blue);
+  border: 2px solid var(--esri-blue);
+}
+
+.btn.small {
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+/* ===== Hero ===== */
+.hero {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--esri-blue);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin: 0.5rem 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 40px 70px rgba(0,0,0,0.3);
+}
+
+/* ===== Sections ===== */
+.section {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-intro {
+  max-width: 650px;
+  font-size: 1.05rem;
+  color: #4a5a6a;
+}
+
+.section.muted {
+  background: var(--muted);
+  padding: 5rem 2rem;
+}
+
+/* ===== Cards ===== */
+.cards {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: var(--esri-blue);
+  margin-top: 0;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: var(--esri-dark);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.footer-note {
+  display: block;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
