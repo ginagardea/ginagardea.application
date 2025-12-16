@@ -7,6 +7,12 @@
 }
 
 /* ===== Base ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;       /* centers content */
+  padding: 80px 32px;   /* THIS is your spacing */
+}
+
 * {
   box-sizing: border-box;
 }
